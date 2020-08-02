@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design 2 - Jorge Jauregui Gallo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> <!--Most authoritative stylesheet(s) placed last-->
+</head>    
+
+<body>
+    <div class="container">
+        <form class="login-form">
+              <svg class="logo" width="3em" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+              </svg>
+              <input type="text" placeholder="Username">
+              <input type="password" id="password-input" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" onClick="showPassword()">
+                <label for="checkbox">Show Password</label>
+            </div>
+            <button type="button" class="btn btn-outline-info mx-auto">Login</button> <!--Bootstrap button-->
+            <a href="#">Forgot username or password?</a>
+        </form>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login UI with Flexbox - Jorge Jauregui Gallo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> <!--Most authoritative stylesheet(s) placed last-->
+</head>    
+
+<body>
+    <div class="container">
+        <form class="login-form">
+          <div class="form-header"> <!--Placed header in own div for typed.js to work-->
+            <h1>Login&nbsp;</h1>
+            <h1 id="login"></h1> 
+          </div>
+              <input type="text" placeholder="Username">
+              <input type="password" id="password-input" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" onClick="showPassword()">
+                <label for="checkbox">Show Password</label>
+            </div>
+            <button type="button" class="btn btn-outline-info mx-auto">Login</button> <!--Bootstrap button-->
+            <a href="#">Forgot username or password?</a>
+        </form>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> <!--typed.js import-->
+  <script src="script.js"></script>
+</body>
+</html>
